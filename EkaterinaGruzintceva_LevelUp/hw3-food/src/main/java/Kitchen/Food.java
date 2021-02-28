@@ -1,36 +1,32 @@
 package Kitchen;
 
-public abstract class Food {
-    private String name;
-    private String color;
-    private int calories;
+public class Food {
+    String name;
+    String color;
+    int calories;
+    public String getName(){ return name; }
+    public String getColor (){ return color; }
+    public int getCalories (){ return calories; }
 
-    public abstract void cut ();
+    public Food(String name, String color, int calories){
 
-    public abstract void boil ();
-
-    public String getName() {
-        return name;
+        this.name= name;
+            this.color = color;
+           this.calories = calories;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void fry(){
+
+        System.out.println("Слегка обжариваем  " + name + ", его цвет "+ color);
+    }
+    public void cut(){
+
+        System.out.println("Режем  " + name + color);
     }
 
-    public String getColor() {
-        return color;
-    }
+    public void boil(){
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public int getCalories() {
-        return calories;
-    }
-
-    public void setCalories(int calories) {
-        this.calories = calories;
+        System.out.println("Варим  " + name + color);
     }
 
 }

@@ -1,32 +1,19 @@
 package Kitchen;
 
-public class Seasoning  {
-
-    public static void main(String[] args) {
-
-        Spices salt = new Spices("Соль ", "Вкус соленый");
-        salt.addSpice();
-    }
-}
-interface SeasonAdd{
-
-    void addSpice();
-}
-class Spices implements SeasonAdd{
-
-    String spicesname;
+public class Seasoning  {String name;
     String taste;
 
-    Spices(String spicesname, String taste){
+    protected String getName(){ return name; }
+    protected String getColor (){ return taste; }
 
-        this.spicesname = spicesname;
+    protected Seasoning(String name, String taste){
+
+        this.name= name;
         this.taste = taste;
+           }
+
+    public void pour(){
+
+        System.out.println("Добавляем  " + name + ", чтобы добавить "+ taste + " вкус");
     }
-
-    public void addSpice() {
-        System.out.println("Сыпем ");
-
-        System.out.printf("%s (%s) \n", spicesname, taste);
-    }
-
 }
