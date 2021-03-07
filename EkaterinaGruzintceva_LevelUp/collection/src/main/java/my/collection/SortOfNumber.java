@@ -53,7 +53,7 @@ public class SortOfNumber {
             System.out.println(" на 3 : " + blist.get(i) + " ");
         }
         for (int i = 0; i < blist.size() / 1000; i++) { // первые 1000 элементов
-            System.out.println(" на 5 : " + clist.get(i) + " ");
+            System.out.println(" на 5  : " + clist.get(i) + " ");
         }
         for (int i = 0; i < blist.size() / 1000; i++) { // первые 1000 элементов
             System.out.println(" на 7 : " + dlist.get(i) + " ");
