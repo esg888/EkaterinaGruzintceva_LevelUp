@@ -9,8 +9,11 @@ public class Food {
     public int getCalories (){ return calories; }
 
     public Food(String name, String color, int calories){
+       // if (calories < 0) {
+          //  throw new NegativeCaloriesExseption("ТЕСТ СООБЩЕНИЕ");
 
-        this.name= name;
+     //   }
+        this.name = name;
             this.color = color;
            this.calories = calories;
     }

@@ -8,8 +8,8 @@ class  Salad {
         ArrayList<Vegetable> Vegetables = new ArrayList<>();
         Vegetable onion = new Vegetable("Лук", "Белый", 43);
         Vegetable carrot = new Vegetable("Морковь", "Оранжевый", 41);
-        Vegetable beet = new Vegetable("Свекла", "Фиолетовый", 43);
-        Vegetable cabbage = new Vegetable("Капуста", "Зеленый", 27);
+        Vegetable beet = new Vegetable("Свекла", "Фиолетовый", 47);
+        Vegetable cabbage = new Vegetable("Капуста", "Зеленый", -1);
         Vegetables.add(onion);
         Vegetables.add(carrot);
         Vegetables.add(beet);
@@ -21,6 +21,7 @@ class  Salad {
                 return o1.calories - o2.calories;
             }
         });
+        for (Vegetable veg: Vegetables) {System.out.println(veg.getName());}
     }
-    for (Vegetable veg: Vegetables) {System.out.println(veg);}
+
         }
