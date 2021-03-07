@@ -9,7 +9,7 @@ class  Salad {
         Vegetable onion = new Vegetable("Лук", "Белый", 43);
         Vegetable carrot = new Vegetable("Морковь", "Оранжевый", 41);
         Vegetable beet = new Vegetable("Свекла", "Фиолетовый", 47);
-        Vegetable cabbage = new Vegetable("Капуста", "Зеленый", -1);
+        Vegetable cabbage = new Vegetable("Капуста", "Зеленый", 17);
         Vegetables.add(onion);
         Vegetables.add(carrot);
         Vegetables.add(beet);
