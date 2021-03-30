@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Calculator Suit MultDiv">
+    <test name="MultDiv">
+
+        <classes>
+
+            <class name="calculatortests.CalculatorDivTest"></class>
+            <class name="calculatortests.CalculatorMultTest"></class>
+
+        </classes>
+    </test>
+
+</suite>
